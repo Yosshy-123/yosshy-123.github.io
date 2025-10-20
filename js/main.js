@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
 	new Typed('#about', {
-		strings: ["I love coding and learning new things."],
+		strings: ["I love coding and working on side projects.<br>When I'm not programming, I read about UX design and teach myself new frameworks."],
 		typeSpeed: 100,
 		backSpeed: 0,
 		showCursor: true,
