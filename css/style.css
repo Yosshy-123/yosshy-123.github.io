@@ -3,23 +3,23 @@
 :root{
 	text-align: center;
 	margin: auto;
-	background-color: #009688;
-	color: #FFFFFF;
+    background-color: #009688;
+    color: #FFFFFF;
 }
 
 html, body {
-	margin: 0;
-	height: 100%;
+    margin: 0;
+    height: 100%;
 }
 
 body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #009688;
-	color: #FFFFFF;
-	text-align: center;
-	font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #009688;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: sans-serif;
 }
 
 nav {
@@ -66,22 +66,22 @@ p {
 }
 
 #home p {
-	font-size: 35px;
+	font-size:  35px;
 	font-weight: bold;
 	margin: 0;
 }
 
 small {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	text-align: center;
-	background-color: #00695f;
-	color: #fff;
-	padding: 5px 0;
-	box-sizing: border-box;
-	z-index: 999;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #00695f;
+    color: #fff;
+    padding: 5px 0;
+    box-sizing: border-box;
+    z-index: 999;
 }
 
 nav a img.github,
@@ -90,43 +90,11 @@ img.github {
 	display: inline-block;
 	vertical-align: middle;
 	box-sizing: border-box;
-	height: 48px;
+	height: 72px;
 	width: auto;
 	max-width: 100%;
-	margin: 0 10px 0 0;
-	transition: height .15s ease, margin .15s ease, transform .15s ease;
-}
-
-nav a img.github {
-	max-height: 56px;
-}
-
-a.github {
-	position: static;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	gap: 8px;
-	height: auto;
-	padding: 0;
-	z-index: 1100;
-	background: transparent;
-	border-radius: 8px;
-	text-decoration: none;
-}
-
-a.github img.github {
-	display: block;
-	vertical-align: middle;
-	box-sizing: border-box;
-	height: clamp(48px, 8vw, 96px);
-	width: auto;
-	max-width: 100%;
-	transition: height .15s ease, transform .15s ease;
-}
-
-a.github:hover img.github {
-	transform: scale(1.05);
+	margin: 0 8px 0 0;
+	transition: height .15s ease, margin .15s ease;
 }
 
 @media (max-width: 900px) {
@@ -145,6 +113,7 @@ a.github:hover img.github {
 	p {
 		font-size: 20px;
 	}
+
 	#home p {
 		font-size: 28px;
 	}
@@ -155,17 +124,9 @@ a.github:hover img.github {
 	nav a img.github,
 	a.github img.github,
 	img.github {
-		height: clamp(40px, 6.5vw, 84px);
-		margin-right: 6px;
-	}
-	a.github {
-		padding: 0;
-	}
-	a.github img.github {
-		height: clamp(40px, 7.5vw, 84px);
+		height: clamp(56px, 6vw, 72px);
 	}
 }
-
 @media (max-width: 480px) {
 	nav ul {
 		overflow-x: auto;
@@ -174,20 +135,21 @@ a.github:hover img.github {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+
 	nav li {
 		display: inline-block;
 		margin-right: 12px;
 	}
+
 	nav a {
 		line-height: 40px;
 		padding: 0 8px;
 		font-size: 13px;
-		padding-left: 6px;
-		padding-right: 6px;
 	}
 	p {
 		font-size: 18px;
 	}
+
 	#home p {
 		font-size: 22px;
 		font-weight: bold;
@@ -202,30 +164,14 @@ a.github:hover img.github {
 	nav a img.github,
 	a.github img.github,
 	img.github {
-		height: clamp(36px, 10vw, 64px);
-		margin-right: 6px;
-	}
-	a.github {
-		position: static;
-		display: inline-flex;
-		margin-left: 8px;
-		margin-right: 8px;
-		height: auto;
-		padding: 4px;
-	}
-	a.github img.github {
-		height: clamp(36px, 12vw, 64px);
+		height: clamp(40px, 10vw, 56px);
 	}
 }
-
 @media (min-width: 320px) and (max-width: 1200px) {
 	p {
 		font-size: clamp(16px, 2.8vw, 25px);
 	}
 	#home p {
 		font-size: clamp(20px, 4.5vw, 35px);
-	}
-	nav a img.github {
-		height: clamp(40px, 5vw, 72px);
 	}
 }
