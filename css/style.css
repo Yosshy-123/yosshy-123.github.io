@@ -83,3 +83,75 @@ small {
     box-sizing: border-box;
     z-index: 999;
 }
+
+
+/* === メディアクエリはChatGPTが作成 テスト段階 === */
+
+@media (max-width: 900px) {
+	body {
+		padding-left: 12px;
+		padding-right: 12px;
+		box-sizing: border-box;
+	}
+	nav ul {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+	nav a {
+		font-size: 14px;
+	}
+	p {
+		font-size: 20px;
+	}
+
+	#home p {
+		font-size: 28px;
+	}
+	small {
+		font-size: 13px;
+		padding: 6px 0;
+	}
+}
+@media (max-width: 480px) {
+	nav ul {
+		overflow-x: auto;
+		white-space: nowrap;
+		-webkit-overflow-scrolling: touch;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	nav li {
+		display: inline-block;
+		margin-right: 12px;
+	}
+
+	nav a {
+		line-height: 40px;
+		padding: 0 8px;
+		font-size: 13px;
+	}
+	p {
+		font-size: 18px;
+	}
+
+	#home p {
+		font-size: 22px;
+		font-weight: bold;
+	}
+	main {
+		padding-top: 56px;
+	}
+	small {
+		font-size: 12px;
+		padding: 6px 0;
+	}
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+	p {
+		font-size: clamp(16px, 2.8vw, 25px);
+	}
+	#home p {
+		font-size: clamp(20px, 4.5vw, 35px);
+	}
+}
