@@ -101,34 +101,32 @@ nav a img.github {
 	max-height: 56px;
 }
 
-a.github{
-	position: fixed;
-	top: 8px;
-	right: 16px;
-	display: flex;
+a.github {
+	position: static;
+	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	gap: 8px;
-	height: 72px;
-	padding: 8px;
-	z-index: 1200;
+	height: auto;
+	padding: 0;
+	z-index: 1100;
 	background: transparent;
-	border-radius: 10px;
+	border-radius: 8px;
 	text-decoration: none;
 }
 
-a.github img.github{
+a.github img.github {
 	display: block;
 	vertical-align: middle;
 	box-sizing: border-box;
-	height: clamp(48px, 8vw, 100px);
+	height: clamp(48px, 8vw, 96px);
 	width: auto;
 	max-width: 100%;
 	transition: height .15s ease, transform .15s ease;
 }
 
-a.github:hover img.github{
-	transform: scale(1.06);
+a.github:hover img.github {
+	transform: scale(1.05);
 }
 
 @media (max-width: 900px) {
@@ -157,16 +155,13 @@ a.github:hover img.github{
 	nav a img.github,
 	a.github img.github,
 	img.github {
-		height: clamp(36px, 5.5vw, 84px);
+		height: clamp(40px, 6.5vw, 84px);
 		margin-right: 6px;
 	}
-	a.github{
-		top: 10px;
-		right: 12px;
-		height: 64px;
-		padding: 6px;
+	a.github {
+		padding: 0;
 	}
-	a.github img.github{
+	a.github img.github {
 		height: clamp(40px, 7.5vw, 84px);
 	}
 }
@@ -207,10 +202,10 @@ a.github:hover img.github{
 	nav a img.github,
 	a.github img.github,
 	img.github {
-		height: clamp(32px, 8vw, 64px);
+		height: clamp(36px, 10vw, 64px);
 		margin-right: 6px;
 	}
-	a.github{
+	a.github {
 		position: static;
 		display: inline-flex;
 		margin-left: 8px;
@@ -218,7 +213,7 @@ a.github:hover img.github{
 		height: auto;
 		padding: 4px;
 	}
-	a.github img.github{
+	a.github img.github {
 		height: clamp(36px, 12vw, 64px);
 	}
 }
@@ -231,6 +226,6 @@ a.github:hover img.github{
 		font-size: clamp(20px, 4.5vw, 35px);
 	}
 	nav a img.github {
-		height: clamp(32px, 4.5vw, 56px);
+		height: clamp(40px, 5vw, 72px);
 	}
 }
