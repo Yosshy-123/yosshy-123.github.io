@@ -56,6 +56,10 @@ nav a {
 	margin-right: 0;
 }
 
+nav a img.github {
+	max-height: 40px;
+}
+
 main {
 	padding-top: 48px;
 	color: #98fb98;
@@ -84,8 +88,26 @@ small {
     z-index: 999;
 }
 
+nav a img.github,
+a.github img.github,
+img.github {
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	height: 32px;
+	width: auto;
+	max-width: 100%;
+	margin: 0 8px 0 0;
+	transition: height .15s ease, margin .15s ease;
+}
 
 /* === メディアクエリはChatGPTが作成 テスト段階 === */
+
+@media (min-width: 0px) {
+	nav a img.github {
+		max-height: 40px;
+	}
+}
 
 @media (max-width: 900px) {
 	body {
@@ -103,7 +125,6 @@ small {
 	p {
 		font-size: 20px;
 	}
-
 	#home p {
 		font-size: 28px;
 	}
@@ -111,7 +132,14 @@ small {
 		font-size: 13px;
 		padding: 6px 0;
 	}
+	nav a img.github,
+	a.github img.github,
+	img.github {
+		height: clamp(20px, 4.0vw, 36px);
+		margin-right: 6px;
+	}
 }
+
 @media (max-width: 480px) {
 	nav ul {
 		overflow-x: auto;
@@ -120,21 +148,20 @@ small {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-
 	nav li {
 		display: inline-block;
 		margin-right: 12px;
 	}
-
 	nav a {
 		line-height: 40px;
 		padding: 0 8px;
 		font-size: 13px;
+		padding-left: 6px;
+		padding-right: 6px;
 	}
 	p {
 		font-size: 18px;
 	}
-
 	#home p {
 		font-size: 22px;
 		font-weight: bold;
@@ -146,12 +173,22 @@ small {
 		font-size: 12px;
 		padding: 6px 0;
 	}
+	nav a img.github,
+	a.github img.github,
+	img.github {
+		height: clamp(18px, 5.5vw, 30px);
+		margin-right: 6px;
+	}
 }
+
 @media (min-width: 320px) and (max-width: 1200px) {
 	p {
 		font-size: clamp(16px, 2.8vw, 25px);
 	}
 	#home p {
 		font-size: clamp(20px, 4.5vw, 35px);
+	}
+	nav a img.github {
+		height: clamp(18px, 3.2vw, 36px);
 	}
 }
