@@ -3,23 +3,23 @@
 :root{
 	text-align: center;
 	margin: auto;
-    background-color: #009688;
-    color: #FFFFFF;
+	background-color: #009688;
+	color: #FFFFFF;
 }
 
 html, body {
-    margin: 0;
-    height: 100%;
+	margin: 0;
+	height: 100%;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #009688;
-    color: #FFFFFF;
-    text-align: center;
-    font-family: sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #009688;
+	color: #FFFFFF;
+	text-align: center;
+	font-family: sans-serif;
 }
 
 nav {
@@ -56,10 +56,6 @@ nav a {
 	margin-right: 0;
 }
 
-nav a img.github {
-	max-height: 40px;
-}
-
 main {
 	padding-top: 48px;
 	color: #98fb98;
@@ -70,22 +66,22 @@ p {
 }
 
 #home p {
-	font-size:  35px;
+	font-size: 35px;
 	font-weight: bold;
 	margin: 0;
 }
 
 small {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    background-color: #00695f;
-    color: #fff;
-    padding: 5px 0;
-    box-sizing: border-box;
-    z-index: 999;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	background-color: #00695f;
+	color: #fff;
+	padding: 5px 0;
+	box-sizing: border-box;
+	z-index: 999;
 }
 
 nav a img.github,
@@ -98,15 +94,41 @@ img.github {
 	width: auto;
 	max-width: 100%;
 	margin: 0 8px 0 0;
-	transition: height .15s ease, margin .15s ease;
+	transition: height .15s ease, margin .15s ease, transform .15s ease;
 }
 
-/* === メディアクエリはChatGPTが作成 テスト段階 === */
+nav a img.github {
+	max-height: 40px;
+}
 
-@media (min-width: 0px) {
-	nav a img.github {
-		max-height: 40px;
-	}
+a.github{
+	position: fixed;
+	top: 6px;
+	right: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	height: 48px;
+	padding: 6px;
+	z-index: 1100;
+	background: transparent;
+	border-radius: 8px;
+	text-decoration: none;
+}
+
+a.github img.github{
+	display: block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	height: clamp(36px, 4.5vw, 56px);
+	width: auto;
+	max-width: 100%;
+	transition: height .15s ease, transform .15s ease;
+}
+
+a.github:hover img.github{
+	transform: scale(1.05);
 }
 
 @media (max-width: 900px) {
@@ -137,6 +159,15 @@ img.github {
 	img.github {
 		height: clamp(20px, 4.0vw, 36px);
 		margin-right: 6px;
+	}
+	a.github{
+		top: 8px;
+		right: 10px;
+		height: 44px;
+		padding: 5px;
+	}
+	a.github img.github{
+		height: clamp(30px, 5vw, 48px);
 	}
 }
 
@@ -178,6 +209,17 @@ img.github {
 	img.github {
 		height: clamp(18px, 5.5vw, 30px);
 		margin-right: 6px;
+	}
+	a.github{
+		position: static;
+		display: inline-flex;
+		margin-left: 8px;
+		margin-right: 8px;
+		height: auto;
+		padding: 4px;
+	}
+	a.github img.github{
+		height: clamp(24px, 8vw, 36px);
 	}
 }
 
