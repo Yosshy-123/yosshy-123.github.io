@@ -145,6 +145,11 @@ p {
   font-weight: 400;
 }
 
+h1 {
+  font-family: var(--font-display);
+  color: var(--text-primary);
+}
+
 /* Accent text */
 .accent {
   color: var(--accent);
