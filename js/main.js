@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  new Typed('#Yosshy', {
+  new Typed('#Yosshy-title', {
     strings: ["Yosshy's HomePage"],
     typeSpeed: 100,
     backSpeed: 50,
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     onComplete: function(self) {
       self.reset();
       setTimeout(function() {
-        new Typed('#about', {
+        new Typed('#Yosshy', {
           strings: ["I'm Yosshy.<br>I am a Programmer."],
           typeSpeed: 100,
           backSpeed: 0,
