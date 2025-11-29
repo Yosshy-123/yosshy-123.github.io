@@ -18,6 +18,19 @@
 
   /* Spacing */
   --nav-height: 64px;
+
+  /* Typographic scale */
+  --fs-p-min: 16px;
+  --fs-p-vw: 3.2vw;
+  --fs-p-max: 30px;
+
+  --fs-h1-min: 28px;
+  --fs-h1-vw: 4.0vw;
+  --fs-h1-max: 56px;
+
+  --fs-navlink-min: 12px;
+  --fs-navlink-vw: 1.2vw;
+  --fs-navlink-max: 16px;
 }
 
 * {
@@ -78,7 +91,7 @@ nav a {
   display: block;
   text-decoration: none;
   color: var(--text-secondary);
-  font-size: 14px;
+  font-size: clamp(var(--fs-navlink-min), var(--fs-navlink-vw), var(--fs-navlink-max));
   font-weight: 400;
   letter-spacing: 0.02em;
   line-height: var(--nav-height);
@@ -125,7 +138,7 @@ main {
 /* Typography */
 p {
   font-family: var(--font-display);
-  font-size: 28px;
+  font-size: clamp(var(--fs-p-min), var(--fs-p-vw), var(--fs-p-max));
   font-weight: 300;
   color: var(--text-primary);
   line-height: 1.2;
@@ -135,6 +148,9 @@ p {
 h1 {
   font-family: var(--font-display);
   color: var(--text-primary);
+  font-size: clamp(24px, 5vw, 40px);
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 /* Accent text */
@@ -174,11 +190,7 @@ small {
   }
 
   nav a {
-    font-size: 13px;
-  }
-
-  p {
-    font-size: 16px;
+    font-size: clamp(var(--fs-navlink-min), var(--fs-navlink-vw), var(--fs-navlink-max));
   }
 
   small {
@@ -210,7 +222,7 @@ small {
   nav a {
     line-height: 56px;
     padding: 0;
-    font-size: 12px;
+    font-size: clamp(var(--fs-navlink-min), var(--fs-navlink-vw), var(--fs-navlink-max));
   }
 
   nav a::after {
@@ -218,7 +230,7 @@ small {
   }
 
   p {
-    font-size: 14px;
+    font-size: clamp(18px, 4vw, var(--fs-p-max));
   }
 
   main {
@@ -230,12 +242,5 @@ small {
   small {
     font-size: 10px;
     padding: 12px 16px;
-  }
-}
-
-/* Fluid typography */
-@media (min-width: 320px) and (max-width: 1200px) {
-  p {
-    font-size: clamp(18px, 3vw, 28px);
   }
 }
