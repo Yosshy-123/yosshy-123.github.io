@@ -132,11 +132,6 @@ p {
   margin: 0;
 }
 
-#home p {
-  font-size: 56px;
-  font-weight: 400;
-}
-
 h1 {
   font-family: var(--font-display);
   color: var(--text-primary);
@@ -186,10 +181,6 @@ small {
     font-size: 16px;
   }
 
-  #home p {
-    font-size: 42px;
-  }
-
   small {
     font-size: 11px;
     padding: 14px 0;
@@ -230,11 +221,6 @@ small {
     font-size: 14px;
   }
 
-  #home p {
-    font-size: 32px;
-    line-height: 1.3;
-  }
-
   main {
     padding-top: 56px;
     padding-left: 16px;
@@ -251,9 +237,5 @@ small {
 @media (min-width: 320px) and (max-width: 1200px) {
   p {
     font-size: clamp(18px, 3vw, 28px);
-  }
-
-  #home p {
-    font-size: clamp(32px, 6vw, 56px);
   }
 }
