@@ -124,20 +124,16 @@ main {
 
 /* Typography */
 p {
-  font-family: var(--font-body);
-  font-size: 18px;
-  font-weight: 300;
-  color: var(--text-secondary);
-  letter-spacing: 0.01em;
-}
-
-.font p {
   font-family: var(--font-display);
   font-size: 18px;
   font-weight: 300;
   color: var(--text-primary);
   line-height: 1.2;
   margin: 0;
+}
+
+#mail p {
+  color: var(--text-secondary);
 }
 
 #home p {
