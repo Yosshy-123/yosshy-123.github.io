@@ -125,7 +125,7 @@ main {
 /* Typography */
 p {
   font-family: var(--font-display);
-  font-size: 18px;
+  font-size: 27px;
   font-weight: 300;
   color: var(--text-primary);
   line-height: 1.2;
