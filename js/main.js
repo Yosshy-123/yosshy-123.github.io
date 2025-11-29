@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
     contentType: 'html',
     loop: false,
     onComplete: function(self) {
-      self.reset();
+      self.cursor.remove();
+      self.el.innerHTML = '';
       setTimeout(function() {
         new Typed('#Yosshy', {
           strings: ["I'm Yosshy.<br>I am a Programmer."],
@@ -21,9 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
-
-
-
 
 document.addEventListener('DOMContentLoaded', function() {
 	new Typed('#about', {
