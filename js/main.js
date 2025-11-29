@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
   new Typed('#Yosshy-title', {
-    strings: ["Yosshy's HomePage"],
+    strings: ["Yosshy's HomePage", ""],
     typeSpeed: 100,
     backSpeed: 50,
+    backDelay: 500,
     showCursor: true,
     contentType: 'html',
     loop: false,
     onComplete: function(self) {
       self.cursor.remove();
-      self.el.innerHTML = '';
       setTimeout(function() {
         new Typed('#Yosshy', {
           strings: ["I'm Yosshy.<br>I am a Programmer."],
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
           contentType: 'html',
           loop: false
         });
-      }, 500);
+      }, 200);
     }
   });
 });
