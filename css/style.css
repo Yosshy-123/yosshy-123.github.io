@@ -50,7 +50,7 @@ body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   font-family: var(--font-body);
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -138,7 +138,7 @@ main {
 p {
   font-family: var(--font-display);
   font-size: clamp(var(--fs-p-min), var(--fs-p-vw), var(--fs-p-max));
-  font-weight: 300;
+  font-weight: 400;
   color: var(--text-primary);
   line-height: 1.2;
   margin: 0;
